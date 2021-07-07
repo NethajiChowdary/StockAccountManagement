@@ -21,9 +21,9 @@ public class StockAccountManagement
 			System.out.println("Enter Share name: ");
 			newItem.setShareName(scanner.next());
 			System.out.println("Enter share Price: ");
-			newItem.setSharePrice(scanner.nextDouble());
+			newItem.setSharePrice(scanner.nextInt());
 			System.out.println("Enter no. of share taken: ");
-			newItem.setShareCount(scanner.nextDouble());	
+			newItem.setShareCount(scanner.nextInt());	
 			stockservice.addStock(newItem);
 		}
 		stockservice.getStockDetails();
