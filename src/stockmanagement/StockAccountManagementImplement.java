@@ -32,10 +32,10 @@ LinkedList<Stock> sharesList = new LinkedList<Stock>();
 	//method to calculate values
 	public void calculateShareValue()
 	{
-		double totalvalue = 0;
+		int totalvalue = 0;
 		for (Stock stock : sharesList)
 		{
-			double value = stock.getShareCount() *stock.getSharePrice();
+			int value = stock.getShareCount() *stock.getSharePrice();
 			System.out.println("Value of "+stock.getShareName()+" is "+value);
 			totalvalue = totalvalue + value;
 		}
