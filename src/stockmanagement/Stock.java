@@ -4,8 +4,8 @@ public class Stock
 {
 
 	private String shareName;
-	private double sharePrice;
-	private double shareCount;
+	private int sharePrice;
+	private int shareCount;
 	
 	//generating getters and setters
 	public String getShareName()
@@ -18,14 +18,14 @@ public class Stock
 		this.shareName = shareName;
 	}
 	
-	public double getSharePrice() 
+	public int getSharePrice() 
 	{
 		return sharePrice;
 	}
 	
-	public void setSharePrice(double sharePrice) 
+	public void setSharePrice(int sharePrice) 
 	{
-		if (sharePrice < 0.0) {
+		if (sharePrice < 0) {
 			System.err.println("Price cannot be zero");
 		}
 		else {
@@ -33,14 +33,14 @@ public class Stock
 		}
 	}
 	
-	public double getShareCount()
+	public int getShareCount()
 	{
 		return shareCount;
 	}
 	
-	public void setShareCount(double shareCount)
+	public void setShareCount(int shareCount)
 	{
-		if (shareCount < 0.0)
+		if (shareCount < 0)
 		{
 			System.err.println("Share cannot be zero");
 		}
